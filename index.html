@@ -44,7 +44,7 @@
             const desc = document.querySelector(".lead");
             const icon = document.getElementById("icon");
             const cityName = document.querySelector(".form-control").value;
-            fetch("http://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&units=metric&appid=a5c38d9981af1529364df00bd5245260")
+            fetch("https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&units=metric&appid=a5c38d9981af1529364df00bd5245260")
                 .then(res => res.json())
                 .then(data => {
                     function getWeather() {
